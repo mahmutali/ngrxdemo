@@ -1,0 +1,9 @@
+
+<h1>Ürünler</h1>
+<table>
+    <tr *ngFor="let product of products" >
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td><a [routerLink]="['/product',product.id]">Detay</a></td>
+    </tr>
+</table>
